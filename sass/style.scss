@@ -1,9 +1,25 @@
-$mainColor: #e2861d;
+$mainColor:
+/*#e2861d;*/
+#ff5e00;
 
 @mixin flexCenter ($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexAround ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -88,6 +104,108 @@ header {
                 font-size: 2.5rem;
                 text-transform: uppercase;
             }
+        }
+    }
+}
+
+/* ABOUT */
+
+.about {
+    height: 100vh;
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        padding: 50px;
+        text-transform: uppercase;
+        color: $mainColor;
+    }
+
+    .about-container {
+        @include flexAround(row);
+        height: calc(100vh - 54px - 100px);
+
+        .about-text {
+            flex-basis: 50%;
+            margin-left: 200px;
+            box-shadow: 1px 1px 1px 1px grey;
+        }
+
+        .about-image {
+            flex-basis: 50%;
+            text-align: center;
+        }
+    }
+}
+
+/* SKILLS */
+
+.skills {
+    height: 100vh;
+    background-image: url('../images/pattern-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #ff8206;
+
+    .skills-wrap {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            padding: 50px;
+            text-transform: uppercase;
+            color: $mainColor;
+        }
+
+        .skills-container {
+            max-width: 1280px;
+            height: calc(100vh - 54px - 100px);
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+            margin: 0 auto;
+
+            .skills-icon {
+                flex-basis: 17%;
+                height: 150px;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        padding: 50px;
+        text-transform: uppercase;
+        color: $mainColor;
+    }
+
+    .portfolio-container {
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .portfolio-item {
+            flex-basis: 22%;
         }
     }
 }
