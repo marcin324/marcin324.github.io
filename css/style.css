@@ -54,4 +54,4 @@ header .wrap .welcome h2 { font-size: 2.5rem; text-transform: uppercase; }
 
 .portfolio .portfolio-container { max-width: 1280px; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-line-pack: distribute; align-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 auto; }
 
-.portfolio .portfolio-container .portfolio-item { -ms-flex-preferred-size: 22%; flex-basis: 22%; }
+.portfolio .portfolio-container .portfolio-item { -ms-flex-preferred-size: 31%; flex-basis: 31%; text-align: center; }
