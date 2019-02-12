@@ -1,6 +1,7 @@
 $mainColor:
 /*#e2861d;*/
-#ff5e00;
+/*#ff5e00;*/
+#FF9600;
 
 @mixin flexCenter ($flexDirection) {
     display: flex;
@@ -61,14 +62,14 @@ header {
                         position: relative;
                         color: #313033;
                         line-height: 80px;
-                        padding: 0 25px;
-                        font-size: 1.5rem;
+                        padding: 0 18px;
+                        font-size: 1.3rem;
                         text-decoration: none;
 
                         &::before {
                             content: '';
                             position: absolute;
-                            bottom: 15px;
+                            bottom: 20px;
                             left: 0;
                             width: 0;
                             height: 2px;
@@ -147,7 +148,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: #ff8206;
+    background-color: $mainColor;
 
     .skills-wrap {
         height: 100%;
@@ -198,15 +199,87 @@ header {
 
     .portfolio-container {
         max-width: 1280px;
+        margin: 50px auto 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-content: space-around;
         flex-wrap: wrap;
-        margin: 0 auto;
 
         .portfolio-item {
-            flex-basis: 31%;
-            text-align: center;
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            a.portfolio-image {
+                display: inline-block;
+                transform: scale(1);
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.04);
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .portfolio-description {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                background-color: #f7a734;
+                color: #FFFFFF;
+                width: 300px;
+                height: 190px;
+                text-align: center;
+                margin-bottom: 100px;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    padding: 15px 0;
+                }
+
+                p {
+                    font-size: .9rem;
+                    padding: 0 15px;
+                }
+
+                div {
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-end;
+
+                    a {
+                        display: inline-block;
+                        font-size: .8rem;
+                        margin: 20px 20px 30px;
+                        padding: 7px 12px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        border: 1px solid #2C2C2C;
+                        background-color: #FFFFFF;
+                        color: #2C2C2C;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover {
+                            background-color: #2C2C2C;
+                            color: #FFFFFF;
+                        }
+
+                    }
+                }
+            }
         }
     }
 }
