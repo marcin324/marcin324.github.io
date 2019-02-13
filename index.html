@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Document</title>
@@ -20,35 +22,35 @@
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="#" class="button1">Home<span></span></a></li>
-                    <li><a href="#" class="button2">About<span></span></a></li>
-                    <li><a href="#" class="button3">Skills<span></span></a></li>
-                    <li><a href="#" class="button4">Portfolio<span></span></a></li>
-                    <li><a href="#" class="button5">Contact<span></span></a></li>
+                    <li><a href="#" class="header-btn1">Home<span></span></a></li>
+                    <li><a href="#" class="header-btn2">About<span></span></a></li>
+                    <li><a href="#" class="header-btn3">Skills<span></span></a></li>
+                    <li><a href="#" class="header-btn4">Portfolio<span></span></a></li>
+                    <li><a href="#" class="header-btn5">Contact<span></span></a></li>
                 </ul>
             </nav>
             <section class="welcome">
                 <h1>Marcin Olszowski</h1>
                 <h2>Junior Front-end Developer</h2>
                 <div class="icon">
-                    <a target="_blank" href="#"><i class="fab fa-github-square"></i></a>
-                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/marcin324" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/marcin-olszowski" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <!--<a href="#" class="arrow-down"> 
 					<span></span>
 					<span></span>
 					<span></span>
-				</a>
-				<a href="#" class="arrow-up">
-					<span></span>
-					<span></span>
-					<span></span>
 				</a>-->
+                <a href="#" class="arrow-up">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </section>
         </div>
     </header>
 
-    <section class="about">
+    <section data-section="header-btn2" class="about">
         <h1>about</h1>
         <div class="about-container">
             <div class="about-text">
@@ -64,7 +66,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section data-section="header-btn3" class="skills">
         <div class="skills-wrap">
             <h1>Skills</h1>
             <div class="skills-container">
@@ -102,83 +104,147 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section data-section="header-btn4" class="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolio-container">
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image1.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/">
+                    <img src="images/portfolio-image1.png" alt="portfolio">
+                </a>
                 <div class="portfolio-description">
                     <h2>my portfolio</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm</p>
+                    <div>
+                        <a target="_blank" href="">demo</a>
+                        <a target="_blank" href="">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image2.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/landing-page/"> <img src="images/portfolio-image2.png"
+                        alt="landing page">
+                </a>
                 <div class="portfolio-description">
                     <h2>layout page</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Project created with HTML, Sass, RWD, JS, jQuery and GIMP</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/landing-page/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/landing-page">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image3.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/country-search-engine/">
+                    <img src="images/portfolio-image3.png" alt="country search">
+                </a>
                 <div class="portfolio-description">
                     <h2>country search</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>App created using HTML, CSS, JS, API and Ajax</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/country-search-engine/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/country-search-engine">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image4.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/random-quote-machine/">
+                    <img src="images/portfolio-image4.png" alt="quotes search">
+                </a>
                 <div class="portfolio-description">
                     <h2>quotes search</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Search created using HTML, CSS, JS and API</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/random-quote-machine/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/random-quote-machine">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image5.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/game-paper-scissors-rock/">
+                    <img src="images/portfolio-image5.png" alt="paper scissors rock">
+                </a>
                 <div class="portfolio-description">
                     <h2>paper scissors rock</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Game created with HTML, CSS and JavaScript</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/game-paper-scissors-rock/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/game-paper-scissors-rock">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image6.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/es6-user-search-engine/">
+                    <img src="images/portfolio-image6.png" alt="user serach">
+                </a>
                 <div class="portfolio-description">
                     <h2>user search on github</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Search created using HTML, CSS, API and React</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/es6-user-search-engine/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/es6-user-search-engine">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image7.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/es6-react-timer/">
+                    <img src="images/portfolio-image7.png" alt="stopwatch">
+                </a>
                 <div class="portfolio-description">
                     <h2>stopwatch</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Stopwatch created using HTML, CSS and React</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/es6-react-timer/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/es6-react-timer">code</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
-                <a target="_blank" href="https://marcin324.github.io/"><img src="images/portfolio-image8.png" alt="portfolio"></a>
+                <a class="portfolio-image" target="_blank" href="https://marcin324.github.io/carousel-2/">
+                    <img src="images/portfolio-image8.png" alt="carousel">
+                </a>
                 <div class="portfolio-description">
                     <h2>carousel</h2>
-                    <p>Website created with HTML, CSS, RWD, Sass, JavaScript and npm. </p>
-                    <a target="_blank" href="">demo</a>
-                    <a target="_blank" href="">code</a>
+                    <p>Carousel created using HTML, CSS, Flickity, Mustache template and Google Map API</p>
+                    <div>
+                        <a target="_blank" href="https://marcin324.github.io/carousel-2/">demo</a>
+                        <a target="_blank" href="https://github.com/marcin324/carousel-2">code</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section data-section="header-btn5" class="contact">
+        <div class="contact-wrap">
+            <h1>contact</h1>
+            <p class="contact-questions"> Do you have any questions? Are you looking for me?<br>Get in touch!</p>
+            <div class="contact-information">
+                <div class="contact-info">
+                    <div class="icon"><i class="fas fa-phone-square"></i></div>
+                    <p class="txt">666 975 001</p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <p class="txt">Gdańsk</p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <p class="txt">marcin.olszowski4@gmail</p>
+                </div>
+            </div>
+            <div class="contact-social-btn">
+                <a target="_blank" href="https://github.com/marcin324"><i class="fab fa-github-square"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/marcin-olszowski"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>© Marcin Olszowski 2019 All rights reserved</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
