@@ -1,7 +1,7 @@
-const arrowUp = document.querySelector('a.arrow-up');
+/*const arrowUp = document.querySelector('a.arrow-up');
 const menuElements = document.querySelectorAll('[class^=header-]');
 
-/*menuElements.forEach(function (menuElement) {
+menuElements.forEach(function (menuElement) {
     menuElement.addEventListener('click', function () {
 
         const goToSection = menuElement.getAttribute('class');
@@ -13,12 +13,10 @@ const menuElements = document.querySelectorAll('[class^=header-]');
     });
 });
 
-arrowUp.addEventListener('click', function () {
-    document.body.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});*/
+arrowUp.addEventListener('click', () => window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+}));*/
 
 $('[class^=header-]').on('click', function () {
     const goToSection = $(this).attr('class');
@@ -27,11 +25,10 @@ $('[class^=header-]').on('click', function () {
     }, 1000)
 });
 
-/*$('.arrow-up').on('click', function () {
-    $('body, html').animate({
-        scrollTop: 0
-    }, 1000);
-});*/
+$('.burger').on('click', function () {
+    $(this).toggleClass('active');
+    $('nav').toggleClass('active');
+});
 
 $(document).ready(function () {
     $('.arrow-up').hide();
