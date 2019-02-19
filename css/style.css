@@ -305,7 +305,7 @@ header .welcome .arrow-up span:nth-of-type(3) {
   padding: 10px 0 10px;
   line-height: 25px;
   text-align: justify;
-  box-shadow: 1px 1px 1px 1px grey;
+  box-shadow: 4px 4px 9px 1px grey;
   background-color: #f8f7f7;
 }
 
