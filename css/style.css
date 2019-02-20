@@ -91,7 +91,7 @@ header .welcome a i {
 }
 
 header .welcome a i:hover {
-  color: #69ace0;
+  color: #053c66;
 }
 
 header .welcome .arrow-up {
@@ -689,7 +689,7 @@ header .welcome .arrow-up span:nth-of-type(3) {
 }
 
 .contact .contact-wrap .contact-social-btn a i:hover {
-  color: #383842;
+  color: #000000;
 }
 
 @media (max-width: 1024px) {
