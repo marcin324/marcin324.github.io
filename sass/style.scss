@@ -1,5 +1,4 @@
 $mainColor: #26A8AC;
-/*#339AEA;*/
 $headerColor: #2C2C2C;
 $textColor: #E0DEDE;
 
@@ -95,14 +94,31 @@ header {
         a {
             display: inline-block;
             padding: 40px 20px;
+            text-decoration: none;
 
             i {
-                font-size: 3.5rem;
-                color: $mainColor;
-                transition: .3s;
+                margin: 0;
+
+                &:before {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 3.5rem;
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                    color: $mainColor;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    transition: .3s;
+                }
 
                 &:hover {
-                    color: #053c66;
+                    &:before {
+                        color: #045E62;
+                        background-color: transparent;
+                    }
                 }
             }
         }
